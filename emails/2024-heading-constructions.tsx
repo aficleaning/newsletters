@@ -9,7 +9,7 @@ import HeaderComponent from "../components/HeaderComponent";
 import { FooterComponent } from "../components/FooterComponent";
 import DefaultHeadComponent from "../components/DefaultHeadComponent";
 import SectionSimpleParagraph, { SectionSimpleParagraphProps } from "../components/SectionSimpleParagraph";
-import { WinterSeasonEmailProps, winterSeasonEmailContents } from "../content/winter-season";
+import { WinterSeasonEmailProps, winterSeasonEmailContents } from "../content/2024-heating";
 
 
 export const WinterSeasonEmail = ({
@@ -45,7 +45,7 @@ export const WinterSeasonEmail = ({
 );
 
 WinterSeasonEmail.PreviewProps = {
-  ...winterSeasonEmailContents.horeca
+  ...winterSeasonEmailContents.constructionCompanies
 } as WinterSeasonEmailProps;
 
 export default WinterSeasonEmail;
