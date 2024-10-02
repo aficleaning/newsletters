@@ -6,11 +6,13 @@ import * as React from "react";
 interface DefaultButton {
   label: string;
   url: string;
+  disabled?: boolean,
 }
 
 export const DefaultButton = ({
   label,
-  url
+  url,
+  disabled = false,
 }: DefaultButton) => (
   <Button 
     href={url} 

@@ -10,7 +10,7 @@ import { FooterComponent } from "../components/FooterComponent";
 import DefaultHeadComponent from "../components/DefaultHeadComponent";
 import SectionSimpleParagraph, { SectionSimpleParagraphProps } from "../components/SectionSimpleParagraph";
 import { WinterSeasonEmailProps, winterSeasonEmailContents } from "../content/2024-heating";
-
+import CTAComponent from "../components/HeaderCTA";
 
 export const WinterSeasonEmail = ({
   header,
@@ -26,7 +26,13 @@ export const WinterSeasonEmail = ({
           title={header.title}
           style={header.style}
           paragraph={header.paragraph}
-
+        />
+        <CTAComponent 
+          claim="Noleggio con pezzi limitati e vendita prestagionale, prenota oggi il tuo riscaldatore."
+          button={{
+            url: "#",
+            label: "Chiama oggi il 055 051 2270"
+          }}
         />
         {sections.map((section: SectionSimpleParagraphProps) => (
           <SectionSimpleParagraph 

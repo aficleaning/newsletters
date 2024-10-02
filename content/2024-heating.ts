@@ -60,14 +60,14 @@ const barAndRestaurants: WinterSeasonEmailProps = {
     {
       title: "🤝 Perché Scegliere AfiCleaning?",
       style: "h3",
-      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! Offriamo noleggio, noleggio operativo e vendita diretta prestagionale, adattandoci alle esigenze del tuo locale e garantendo un supporto professionale per mantenere il tuo ambiente sempre accogliente. Scegli la qualità e l’affidabilità di AfiCleaning per un inverno caldo e di successo!"
+      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! Offriamo noleggio, noleggio operativo, assistenza e vendita diretta prestagionale, adattandoci alle esigenze del tuo locale e garantendo un supporto professionale per mantenere il tuo ambiente sempre accogliente. Scegli la qualità e l’affidabilità di AfiCleaning per un inverno caldo e di successo!"
     },
   ],
 }
 
 const agricolturalCompanies: WinterSeasonEmailProps = {
   header: {
-    title: "🌡️ Mantieni la Temperatura Ideale per le Tue Coltivazioni",
+    title: "🌡️ {{ contact.NOME }}, Mantieni la Temperatura Ideale per le Tue Coltivazioni",
     style: "h1",
     paragraph: "Un ambiente caldo e controllato favorisce la crescita delle piante e migliora le condizioni di lavoro per il tuo team, garantendo raccolti abbondanti anche nelle stagioni più fredde.",
   },
@@ -88,14 +88,14 @@ const agricolturalCompanies: WinterSeasonEmailProps = {
     {
       title: "🤝 Perché Scegliere AfiCleaning?",
       style: "h3",
-      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! <b>Offriamo noleggio, noleggio operativo e vendita diretta prestagionale</b>, adattandoci alle esigenze della tua azienda agricola e garantendo un supporto professionale per mantenere il tuo ambiente sempre caldo e produttivo. Scegli la qualità e l’affidabilità di AfiCleaning per un’agricoltura di successo, anche nei mesi più freddi!"
+      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! <b>Offriamo noleggio, noleggio operativo, assistenza e vendita diretta prestagionale</b>, adattandoci alle esigenze della tua azienda agricola e garantendo un supporto professionale per mantenere il tuo ambiente sempre caldo e produttivo. Scegli la qualità e l’affidabilità di AfiCleaning per un’agricoltura di successo, anche nei mesi più freddi!"
     },
   ],
 }
 
 const constructionCompanies: WinterSeasonEmailProps = {
   header: {
-    title: "🌡️ Ambiente Caldo per una Costruzione Efficiente e Sicura",
+    title: "🌡️ {{ contact.NOME }}, Mantieni Caldo nei Cantieri per una Costruzione Efficiente e Sicura",
     style: "h1",
     paragraph: "Mantenere una temperatura ottimale nei cantieri e nei magazzini di materiali edilizi migliora la produttività dei lavoratori, preserva i materiali sensibili e garantisce operazioni sicure anche nelle condizioni più fredde.",
   },
