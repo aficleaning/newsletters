@@ -60,7 +60,7 @@ const barAndRestaurants: WinterSeasonEmailProps = {
     {
       title: "🤝 Perché Scegliere AfiCleaning?",
       style: "h3",
-      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! Offriamo noleggio, noleggio operativo, assistenza e vendita diretta prestagionale, adattandoci alle esigenze del tuo locale e garantendo un supporto professionale per mantenere il tuo ambiente sempre accogliente. Scegli la qualità e l’affidabilità di AfiCleaning per un inverno caldo e di successo!"
+      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! <b>Offriamo noleggio, noleggio operativo, assistenza e vendita diretta prestagionale</b>, adattandoci alle esigenze del tuo locale e garantendo un supporto professionale per mantenere il tuo ambiente sempre accogliente. Scegli la qualità e l’affidabilità di AfiCleaning per un inverno caldo e di successo!"
     },
   ],
 }
@@ -129,7 +129,7 @@ const constructionCompanies: WinterSeasonEmailProps = {
     {
       title: "🤝 Perché Scegliere AfiCleaning?",
       style: "h3",
-      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! Offriamo <b>noleggio, noleggio operativo e vendita diretta prestagionale</b>, adattandoci alle esigenze specifiche della tua azienda edilizia. Che tu abbia bisogno di riscaldare cantieri attivi o magazzini di materiali, AfiCleaning garantisce un supporto professionale per mantenere il tuo ambiente sempre caldo e produttivo. Scegli la qualità e l’affidabilità di AfiCleaning per un inverno efficiente e senza interruzioni nel tuo settore edilizio!"
+      paragraph: "Affidati ad AfiCleaning per soluzioni di riscaldamento flessibili e convenienti! Offriamo <b>noleggio, noleggio operativo, assistenza e vendita diretta prestagionale</b>, adattandoci alle esigenze specifiche della tua azienda edilizia. Che tu abbia bisogno di riscaldare cantieri attivi o magazzini di materiali, AfiCleaning garantisce un supporto professionale per mantenere il tuo ambiente sempre caldo e produttivo. Scegli la qualità e l’affidabilità di AfiCleaning per un inverno efficiente e senza interruzioni nel tuo settore edilizio!"
     },
   ],
 }
