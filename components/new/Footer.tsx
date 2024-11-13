@@ -50,22 +50,19 @@ const socialLinks: SocialLink[] = [
 export default function NewFooter() {
   return (
     <>
-      <Section className="text-center">
+      <Section className="my-[16px] text-center">
         <table className="w-full">
           <tr className="w-full">
             <td align="center">
               <Img
                 alt={imgAlt}
-                height="42"
+                height="25"
                 src={imgSrc}
               />
             </td>
           </tr>
           <tr className="w-full">
             <td align="center">
-              <Text className="my-[8px] text-[16px] font-semibold leading-[24px] text-gray-900">
-                AfiCleaning
-              </Text>
               <Text className="mb-0 mt-[4px] text-[16px] leading-[24px] text-gray-500">
                 Soluzioni per la pulizia e il controllo del clima.
               </Text>
