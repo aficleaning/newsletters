@@ -23,6 +23,7 @@ interface Props {
   features: SectionFeaturesProps,
   articles: SectionArticlesProps,
   callToAction: SectionCallToActionProps,
+  otherProducts: SectionArticlesProps,
 }
 
 export const WinterSeasonEmail = ({
@@ -30,7 +31,8 @@ export const WinterSeasonEmail = ({
   header,
   features,
   articles,
-  callToAction
+  callToAction,
+  otherProducts
 }: Props) => (
   <Html>
   <Head>
@@ -57,7 +59,7 @@ export const WinterSeasonEmail = ({
   </Head>
     <Preview>Noleggio e vendita prestagionali</Preview>
     <Tailwind>
-      <Body className="bg-gray-100">
+      <Body className="bg-white">
         <Container>
           <NewHeader />
 
@@ -70,7 +72,7 @@ export const WinterSeasonEmail = ({
             button={header.button}
           />
 
-          <Divider type="lg"/>
+          <Divider type="md"/>
           <SectionArticles 
             title={articles.title}
             description={articles.description}
@@ -86,15 +88,23 @@ export const WinterSeasonEmail = ({
             button={callToAction.button}
           />
 
-
           <Divider type="lg"/>
+          <SectionArticles 
+            title={otherProducts.title}
+            description={otherProducts.description}
+            subtitle={otherProducts.subtitle}
+            articles={otherProducts.articles}
+          />
+
+
+          <Divider type="md"/>
           <SectionFeatures 
             title={features.title}
             description={features.description}
             list={features.list}
           />
 
-          <Divider type="lg"/>
+          <Divider type="md"/>
           <NewFooter />
         </Container>
       </Body>
@@ -195,6 +205,34 @@ const sectionArticles: SectionArticlesProps = {
   ]
 }
 
+const sectionRelated: SectionArticlesProps = {
+  subtitle: "Altre macchine disponibili",
+  title: "Generatori ad aria calda a gasolio",
+  description: "Scoprite la nostra gamma di generatori di aria calda a gasolio, ideali per cantieri navali e capannoni. Offrono potenza affidabile e prestazioni elevate, perfetti per esigenze diverse. Contattateci per maggiori informazioni e soluzioni personalizzate.",
+  articles: [
+    {
+      first: {
+        title: "Biemmedue EC85",
+        //subtitle: "Produttivita'",
+        description: "Dotato di bruciatore automatico e presa per collegamento termostato o timer.",
+        image: {
+          label: "",
+          src: "https://cdn.prod.website-files.com/6257f9793ff4d4b9137c730a/6735b5d479a8a31c3f0169d9_COPERTINA.jpg",
+        }
+      },
+      second: {
+        title: "Biemmedue Phoen",
+        //subtitle: "Ambienti sani",
+        description: "Con selettore potenza fino a 110kW e bruciatore integrato con ventilazione indipendente.",
+        image: {
+          label: "",
+          src: "https://cdn.prod.website-files.com/6257f9793ff4d4b9137c730a/6735b5c49388260c8dd7c4c0_ec85.jpg",
+        }
+      },
+    }
+  ]
+}
+
 const sectionCallToAction: SectionCallToActionProps = {
   title: "Promo inverno 2024",
   subtitle: "Offerta noleggio stagionale",
@@ -211,6 +249,7 @@ WinterSeasonEmail.PreviewProps = {
   features: sectionFeatures,
   articles: sectionArticles,
   callToAction: sectionCallToAction,
+  otherProducts: sectionRelated,
 } as Props
 
 export default WinterSeasonEmail;
