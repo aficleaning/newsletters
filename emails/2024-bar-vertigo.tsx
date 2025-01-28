@@ -80,13 +80,15 @@ export const WinterSeasonEmail = ({
             articles={articles.articles}
           />
 
-          <Divider type="lg"/>
-          <SectionCallToAction 
-            title={callToAction.title}
-            description={callToAction.description}
-            subtitle={callToAction.subtitle}
-            button={callToAction.button}
-          />
+          {
+            // <Divider type="lg"/>
+            // <SectionCallToAction 
+            //   title={callToAction.title}
+            //   description={callToAction.description}
+            //   subtitle={callToAction.subtitle}
+            //   button={callToAction.button}
+            // />
+          }
 
           <Divider type="lg"/>
           <SectionArticles 
